@@ -22,13 +22,10 @@ export default function VoiceChatbot() {
         formData.append("file", audioBlob, "input.wav");
 
         // Send to your API
-        const response = await fetch(
-          "https://fj0v0kvn-8000.inc1.devtunnels.ms/api/audio/talk",
-          {
-            method: "POST",
-            body: formData,
-          }
-        );
+        const response = await fetch("http://localhost:8000/api/audio/talk", {
+          method: "POST",
+          body: formData,
+        });
 
         // Get back audio response
         const audioResp = await response.blob();
