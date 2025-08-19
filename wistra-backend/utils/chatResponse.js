@@ -9,7 +9,7 @@ module.exports = async function generateChatResponse(messages) {
     // Format messages for OpenAI API v4
 
     const response = await openai.responses.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o-mini",
       input: messages,
     });
 

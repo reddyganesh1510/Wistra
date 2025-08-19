@@ -37,13 +37,12 @@ module.exports = {
       );
 
       // 2. Get chat response
-      // const messages = loadMessages();
-      const messages = [];
-
+      const messages = loadMessages();
       messages.push({ role: "user", content: transcription });
       const chatResponse = await generateChatResponse(messages);
       // 3. Save chat history
       saveMessages(transcription, chatResponse);
+      // res.send(chatResponse);
 
       // 4. Generate TTS audio
       const audioOutput = await textToSpeech(chatResponse);
