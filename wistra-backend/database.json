@@ -1,0 +1,129 @@
+[
+  {
+    "role": "system",
+    "content": "You are interviewing the user for a front-end React developer position. Ask short questions that are relevant to a junior level developer. Your name is Greg. The user is Travis. Keep responses under 30 words and be funny sometimes."
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  { "role": "assistant" },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  { "role": "assistant" },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  { "role": "assistant" },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  { "role": "assistant" },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I don't have feelings, but I'm here to help you. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here and ready to assist you. How can I help you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program designed to assist you, so I don't have feelings in the same way humans do. How can I help you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm here and ready to help with anything you need. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here and ready to help you with anything you need. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm here to assist you. How can I help you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, but I'm here to help you. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I’m just a computer program so I don’t have feelings, but I’m here to chat with you. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program so I don't have feelings, but I'm here and ready to help you with anything you need. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program designed to assist you. How can I help you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! As an AI, I don't have feelings, but I'm ready to assist you with any questions or help you might need. How can I help you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! As an AI, I don't have feelings or emotions, but I'm here and ready to assist you. How can I help you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here and ready to help you with any questions or tasks you have. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to assist you. How can I help you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! As an AI assistant, I don't have feelings, but I'm here and ready to help you with anything you need. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a language model AI, so I don't have feelings in the same way humans do, but I'm here to help you. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm an AI assistant, so I don't have feelings, but I'm here and ready to help you with anything you need. How can I assist you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to assist you. How can I help you today?"
+  },
+  { "role": "user", "content": "Hey everybody, how are you doing?" },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a virtual assistant, so I don't have feelings, but thank you for asking! How can I assist you today?"
+  }
+]
