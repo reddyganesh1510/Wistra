@@ -47,9 +47,12 @@ module.exports = {
       // 4. Generate TTS audio
       const audioOutput = await textToSpeech(chatResponse);
 
-      // // 5. Stream audio back
-      res.set("Content-Type", "audio/mpeg");
-      res.send(audioOutput);
+      res.set({
+        "Content-Type": "audio/mpeg",
+        "Content-Disposition": "inline; filename=response.mp3",
+      });
+
+      audioOutput.pipe(res);
     } catch (error) {
       console.error(error);
       res.status(500).json({ error: "Error processing audio file" });

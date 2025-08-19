@@ -27,13 +27,30 @@ export default function VoiceChatbot() {
           body: formData,
         });
 
-        // Get back audio response
-        const audioResp = await response.blob();
-        const audioURL = URL.createObjectURL(audioResp);
+        // Stream audio response
+        if (response.body) {
+          const reader = response.body.getReader();
+          const chunks = [];
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            chunks.push(value);
+          }
+          const audioResp = new Blob(chunks, { type: "audio/mpeg" });
+          const audioURL = URL.createObjectURL(audioResp);
 
-        // Play it automatically
-        const audio = new Audio(audioURL);
-        audio.play();
+          // Play it automatically
+          const audio = new Audio(audioURL);
+          audio.playbackRate = 1.2;
+          audio.play();
+        } else {
+          // Fallback for non-streamed response
+          const audioResp = await response.blob();
+          const audioURL = URL.createObjectURL(audioResp);
+          const audio = new Audio(audioURL);
+          audio.playbackRate = 1.2;
+          audio.play();
+        }
       };
 
       mediaRecorderRef.current.start();

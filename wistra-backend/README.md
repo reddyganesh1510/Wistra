@@ -1,76 +1,86 @@
-# Wistra Backend
+# Wistra Voice Chatbot
 
-Wistra Backend is a Node.js application that provides audio transcription, chat response generation, and chat history management functionalities. This project utilizes Express.js for routing and middleware, and integrates with OpenAI's APIs for audio processing and chat interactions.
+A full-stack voice chatbot using React, Node.js, OpenAI Whisper, GPT, and ElevenLabs TTS.
 
-## Features
+---
 
-- **Audio Transcription**: Upload audio files and receive transcriptions using OpenAI's Whisper API.
-- **Chat Response Generation**: Interact with a chat interface that generates responses based on user input using OpenAI's ChatCompletion API.
-- **Chat History Management**: Save and load chat messages, with the ability to clear history.
+## Prerequisites
 
-## Project Structure
+- Node.js 20+ (for backend)
+- npm (comes with Node.js)
+- OpenAI API key
+- ElevenLabs API key
 
-```
-wistra-backend
-├── src
-│   ├── app.js                  # Entry point of the application
-│   ├── controllers             # Contains controller files for handling requests
-│   │   ├── audioController.js   # Audio processing functions
-│   │   ├── chatController.js    # Chat response generation functions
-│   │   └── historyController.js  # Chat history management functions
-│   ├── routes                  # Contains route definitions
-│   │   ├── audioRoutes.js       # Routes for audio processing
-│   │   ├── chatRoutes.js        # Routes for chat interactions
-│   │   └── historyRoutes.js     # Routes for managing chat history
-│   └── utils                   # Utility functions
-│       ├── transcription.js      # Audio transcription utility
-│       ├── chatResponse.js       # Chat response utility
-│       └── historyManager.js     # Chat history management utility
-├── package.json                # NPM configuration file
-└── README.md                   # Project documentation
+---
+
+## Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/wistra.git
+cd wistra
 ```
 
-## Installation
+### 2. Backend Setup
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd wistra-backend
-   ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
+```bash
+cd wistra-backend
+npm install
+```
+
+- Create a `.env` file in `wistra-backend` with your keys:
+
+  ```
+  OPENAI_API_KEY=your_openai_api_key
+  ELEVENLABS_KEY=your_elevenlabs_api_key
+  ```
+
+- Create a `data` folder for chat history:
+
+  ```bash
+  mkdir data
+  ```
+
+- Start the backend server:
+
+  ```bash
+  node src/app.js
+  ```
+
+  The backend runs on `http://localhost:8000`.
+
+---
+
+### 3. Frontend Setup
+
+```bash
+cd ../wistra-frontend/my-app
+npm install
+```
+
+- Start the React app:
+
+  ```bash
+  npm start
+  ```
+
+  The frontend runs on `http://localhost:3000`.
+
+---
 
 ## Usage
 
-To start the application, run the following command:
+1. Open `http://localhost:3000` in your browser.
+2. Click the **Record** button to speak.
+3. The app sends your audio to the backend, gets a chat response, and plays the reply as audio.
 
-```
-npm start
-```
+---
 
-The server will start on the specified port, and you can access the API endpoints for audio transcription, chat responses, and chat history management.
+## Troubleshooting
 
-## API Endpoints
+- **CORS errors:** Make sure backend allows requests from frontend origin.
+- **Audio format errors:** The backend only accepts supported formats (`wav`, `mp3`, etc.).
+- **API keys:** Ensure your `.env` file is correct and not committed to git.
 
-- **Audio Processing**
-  - `POST /api/audio/upload`: Upload an audio file for transcription.
-
-- **Chat Interactions**
-  - `POST /api/chat/respond`: Send a message and receive a chat response.
-
-- **Chat History Management**
-  - `GET /api/history`: Retrieve chat history.
-  - `DELETE /api/history`: Clear chat history.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the ISC License.
+---
