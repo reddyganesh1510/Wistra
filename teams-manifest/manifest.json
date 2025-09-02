@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "version": "1.0.0",
+  "id": "66015123-bbd5-4f2e-98ed-cdffb8f3514c",
+  "packageName": "com.yourcompany.mybot",
+  "name": {
+    "short": "Wistra",
+    "full": "My Microsoft Teams Bot"
+  },
+  "developer": {
+    "name": "Your Company",
+    "websiteUrl": "https://yourcompany.com",
+    "privacyUrl": "https://yourcompany.com/privacy",
+    "termsOfUseUrl": "https://yourcompany.com/terms"
+  },
+  "description": {
+    "short": "A sample Teams bot",
+    "full": "This bot integrates with Microsoft Teams and responds to messages."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#6264A7",
+  "bots": [
+    {
+      "botId": "66015123-bbd5-4f2e-98ed-cdffb8f3514c",
+      "scopes": ["personal", "team", "groupchat"],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": ["personal", "team", "groupchat"],
+          "commands": [
+            {
+              "title": "help",
+              "description": "Shows help information"
+            },
+            {
+              "title": "hello",
+              "description": "Greets the user"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["https://2c367598c51e.ngrok-free.app"]
+}
